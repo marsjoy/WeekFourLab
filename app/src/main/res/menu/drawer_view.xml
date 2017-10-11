@@ -1,4 +1,10 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nav_switch"
+        app:actionLayout="@layout/action_view_switch"
+        android:title="@string/downloaded_only" />
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/south_park_fragment"
