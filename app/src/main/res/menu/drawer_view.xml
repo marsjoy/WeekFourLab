@@ -6,22 +6,34 @@
         android:title="@string/downloaded_only"
         android:titleCondensed="@string/downloaded"/>
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/south_park_fragment"
-            android:icon="@drawable/ic_south_park"
-            android:title="@string/south_park" />
-        <item
-            android:id="@+id/family_guy_fragment"
-            android:icon="@drawable/ic_family_guy"
-            android:title="@string/family_guy" />
-        <item
-            android:id="@+id/simpsons_fragment"
-            android:icon="@drawable/ic_simpsons"
-            android:title="@string/simpsons" />
-        <item
-            android:id="@+id/futurama_fragment"
-            android:icon="@drawable/ic_futurama"
-            android:title="@string/futurama" />
-    </group>
+    <item android:title="@string/cartoon_wars">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/south_park_fragment"
+                    android:icon="@drawable/ic_south_park"
+                    android:title="@string/south_park" />
+                <item
+                    android:id="@+id/family_guy_fragment"
+                    android:icon="@drawable/ic_family_guy"
+                    android:title="@string/family_guy" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/simpsorama">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/simpsons_fragment"
+                    android:icon="@drawable/ic_simpsons"
+                    android:title="@string/simpsons" />
+                <item
+                    android:id="@+id/futurama_fragment"
+                    android:icon="@drawable/ic_futurama"
+                    android:title="@string/futurama" />
+            </group>
+        </menu>
+    </item>
+
 </menu>
