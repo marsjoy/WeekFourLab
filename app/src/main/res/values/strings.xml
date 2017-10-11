@@ -2,7 +2,7 @@
     <string name="app_name">NavigationDrawerExercise</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="switch_text">Switch</string>
+    <string name="switch_text">Filter</string>
 
     <!-- Nav Drawer Menu Items -->
     <string name="south_park">South Park</string>
@@ -12,6 +12,6 @@
     <string name="cartoon_wars">Cartoon Wars</string>
     <string name="simpsorama">Simpsorama</string>
     <string name="downloaded_only">Downloaded only</string>
+    <string name="downloaded">Downloaded</string>
     <string name="header">Animated Shows</string>
-
 </resources>
