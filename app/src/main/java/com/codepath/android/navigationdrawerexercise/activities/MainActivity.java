@@ -12,6 +12,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.codepath.android.navigationdrawerexercise.R;
+import com.codepath.android.navigationdrawerexercise.fragments.FamilyGuyFragment;
+import com.codepath.android.navigationdrawerexercise.fragments.FuturamaFragment;
+import com.codepath.android.navigationdrawerexercise.fragments.SimpsonsFragment;
+import com.codepath.android.navigationdrawerexercise.fragments.SouthParkFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -60,19 +64,20 @@ public class MainActivity extends AppCompatActivity {
     public void selectDrawerItem(MenuItem menuItem) {
         // Create a new fragment and specify the fragment to show based on nav item clicked
         Fragment fragment = null;
-        Class fragmentClass;
-        switch(menuItem.getItemId()) {
-            case R.id.nav_first_fragment:
-                fragmentClass = FirstFragment.class;
+        Class fragmentClass = null;
+        switch (menuItem.getItemId()) {
+            case R.id.south_park_fragment:
+                fragmentClass = SouthParkFragment.class;
                 break;
-            case R.id.nav_second_fragment:
-                fragmentClass = SecondFragment.class;
+            case R.id.family_guy_fragment:
+                fragmentClass = FamilyGuyFragment.class;
                 break;
-            case R.id.nav_third_fragment:
-                fragmentClass = ThirdFragment.class;
+            case R.id.simpsons_fragment:
+                fragmentClass = SimpsonsFragment.class;
                 break;
-            default:
-                fragmentClass = FirstFragment.class;
+            case R.id.futurama_fragment:
+                fragmentClass = FuturamaFragment.class;
+                break;
         }
 
         try {
@@ -94,11 +99,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     private ActionBarDrawerToggle setupDrawerToggle() {
         // NOTE: Make sure you pass in a valid toolbar reference.  ActionBarDrawToggle() does not require it
         // and will not render the hamburger icon without it.
-        return new ActionBarDrawerToggle(this, mDrawer, toolbar, R.string.drawer_open,  R.string.drawer_close);
+        return new ActionBarDrawerToggle(this, mDrawer, toolbar, R.string.drawer_open, R.string.drawer_close);
     }
 
     @Override
